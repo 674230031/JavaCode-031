@@ -46,8 +46,12 @@ public class W15_04_method_findMaxMin {
     }
     
     // 5) Method สำหรับแสดงค่าใน array ทั้งหมด
-
-
+    static void displayarray(int[] numbers){
+        for(int i =0; i <numbers.length; i++){
+        System.out.print(numbers[i] +"  ");
+        }
+        System.out.println();
+    }
 
 
     public static void main(String[] args) {
@@ -63,7 +67,9 @@ public class W15_04_method_findMaxMin {
 
         // 4) Method สำหรับหาค่าน้อยที่สุด โดยรับค่าเป็น array
         int[] numbers = {10, 20, 30, 4, 50, };
+        displayarray(numbers);
         System.out.println("Min number in array is " + findmin(numbers));
+
 
     }
 }
