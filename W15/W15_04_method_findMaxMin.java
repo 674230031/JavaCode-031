@@ -36,6 +36,7 @@ public class W15_04_method_findMaxMin {
 
     // 4) Method สำหรับหาค่าน้อยที่สุด โดยรับค่าเป็น array
     static int findmin(int[] numbers){
+        displayarray(numbers);
         int min = numbers[0];
         for(int i =1; i <numbers.length; i++){
             if(numbers[i] < min){
@@ -67,7 +68,7 @@ public class W15_04_method_findMaxMin {
 
         // 4) Method สำหรับหาค่าน้อยที่สุด โดยรับค่าเป็น array
         int[] numbers = {10, 20, 30, 4, 50, };
-        displayarray(numbers);
+        // displayarray(numbers);
         System.out.println("Min number in array is " + findmin(numbers));
 
 
